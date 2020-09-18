@@ -119,14 +119,17 @@ form i:hover
     align-items: center;
     cursor: pointer;
     margin: 10px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
-.button-container i:hover
+.button-container i.check:hover
 {
-    background-image: linear-gradient(45deg, #222663, #d62c48);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(129, 230, 28);
+}
+
+.button-container i.delete:hover
+{
+    color: rgb(230, 28, 28);
 }
 
 .todo li
@@ -138,4 +141,11 @@ form i:hover
 {
     padding: 0 15px;
     background-color: rgb(226, 223, 231);
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.todo-item:hover
+{
+    transform: scale(1.05);
 }

@@ -29,14 +29,14 @@ function addList (e)
 
     //check button
     const checkButton = document.createElement("i");
-    checkButton.classList.add('far', 'fa-check-square', 'fa-2x');
+    checkButton.classList.add('far', 'fa-check-square', 'fa-2x', 'check');
     buttonDiv.appendChild(checkButton);
 
 
 
     //delete button
     const deleteButton = document.createElement("i");
-    deleteButton.classList.add('fas', 'fa-trash', 'fa-2x');
+    deleteButton.classList.add('fas', 'fa-trash', 'fa-2x', 'delete');
     buttonDiv.appendChild(deleteButton);
 
 

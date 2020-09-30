@@ -71,6 +71,12 @@ function deleteCheck (e)
         var container = parent.parentElement;
         container.children[0].classList.toggle('completed');
     }
+    if(target.classList[0] == 'todo-item')
+    {
+        target.classList.toggle('completed');
+        var sibling = target.nextSibling;
+        sibling.children[0].classList.toggle('done');
+    }
 }
 
 function enter (e)

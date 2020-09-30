@@ -72,3 +72,12 @@ function deleteCheck (e)
         container.children[0].classList.toggle('completed');
     }
 }
+
+function enter (e)
+{
+    if(e.keyCode === 13)
+    {
+        e.preventDefault();
+        addList(e);
+    }
+}

@@ -127,6 +127,12 @@ form i:hover
     color: rgb(129, 230, 28);
 }
 
+.button-container i.done
+{
+    color: rgb(129, 230, 28);
+}
+
+
 .button-container i.delete:hover
 {
     color: rgb(230, 28, 28);
@@ -149,3 +155,11 @@ form i:hover
 {
     transform: scale(1.05);
 }
+
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+

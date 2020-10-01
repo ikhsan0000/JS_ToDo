@@ -54,7 +54,7 @@ form
     
 }
 
-form input, form button
+form input, form button, select
 {
     padding: 12px;
     font-size: 15px;
@@ -62,11 +62,19 @@ form input, form button
     background-color: rgb(226, 223, 231);
 }
 
-form input
+form input.todo-input
 {
-    width: 500px;
+    width: 50%;
     border-radius: 20px;
 }
+
+form select.filter
+{
+    margin-left: 2%;
+    width: 200px;
+    border-radius: 20px;
+}
+
 
 form i
 {
@@ -105,6 +113,7 @@ form i:hover
     font-size: 12pt;
     align-items: center;
     justify-content: space-between;
+    transition: all .4s ease-in-out
 }
 
 .button-container
@@ -148,7 +157,7 @@ form i:hover
     padding: 0 15px;
     background-color: rgb(226, 223, 231);
     border-radius: 50px;
-    transition: .3s;
+    transition: .3s ease
 }
 
 .todo-item:hover
@@ -162,4 +171,13 @@ form i:hover
     opacity: 0.5;
 }
 
+.fall
+{
+    transform: translateY(7rem) rotateZ(10deg);
+    opacity: 0;
+}
 
+.hide
+{
+    display: none;
+}

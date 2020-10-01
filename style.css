@@ -70,11 +70,16 @@ form input.todo-input
 
 form select.filter
 {
+    appearance: none;
     margin-left: 2%;
-    width: 200px;
+    width : 15%;
     border-radius: 20px;
 }
 
+form select.filter option
+{
+    appearance: none;
+}
 
 form i
 {

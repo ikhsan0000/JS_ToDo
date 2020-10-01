@@ -16,13 +16,15 @@
     </header>
     <div class="offset-form">
         <form>
-            <input type="text" class="todo-input" onkeypress="return enter(event)">
+            <input type="text" class="todo-input" onkeypress="return enter(event)" placeholder="Type your todo here . . .">
             <i class="fas fa-plus-circle fa-2x todo-button"></i>
             <select name="" id="filter" class="filter">
-                <option value="All">All</option>
+                <option value="" disabled>-- Filter by --</option>
+                <option value="All" selected>All</option>
                 <option value="Done">Done</option>
                 <option value="Left">Not Done</option>
             </select>
+            <i class="fas fa-chevron-down" style="color: black;"></i>
         </form>
     </div>
 
